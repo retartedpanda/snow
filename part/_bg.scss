@@ -1,0 +1,31 @@
+.bg {
+    main {
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 892px;
+        padding-bottom: 200px;
+    }
+    &_items {
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+    &_text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        
+        flex-basis: 29%;
+        
+    }
+    &_first {
+        border-top: 4px solid #6D3F96 ;
+    }
+    &_second {
+        border-top: 4px solid #70CBCE ;
+    }
+    &_third {
+        border-top: 4px solid #FDC05D ;
+    }
+}
