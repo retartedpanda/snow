@@ -21,18 +21,18 @@
     ul {
         text-align: center;
         flex-basis: 29%;
+        transform: scale(1);
+        transition-duration:0.3s;
         
     }
     li {
-      background-color: #eee;
+      background-color: #fff;
       height: 50px;
       font-size: 17px;
-      line-height: 22px;
-      border:1px solid black;
-      padding-top: 15px;
-      &li:nth-child(3n){
-        padding-top: 0px;
-      }
+      line-height: 50px;    
+    }
+    &_li {
+        line-height: 25px!important;
     }
     &_black {
         background-color: #231F20!important;
@@ -41,13 +41,17 @@
     }
     &_grey {
         background-color: rgb(196, 196, 196)!important;
-        line-height: 35px!important;
+        line-height: 50px!important;
         font-size: 35px!important;
        
         
     }
     &_white {
-        background-color: rgb(196, 196, 196)!important
-        ;
+        background-color: rgb(196, 196, 196)!important;
+    }
+    ul:hover {
+        transform: scale(1.5);
+        z-index: 10000;
+        transition:all .5s linear ;
     }
 }
