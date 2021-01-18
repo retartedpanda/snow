@@ -98,16 +98,22 @@ li {
     font-size: 21px; }
   .app img {
     transform: translateY(500px); }
+    @media screen and (max-width: 768px) {
+      .app img {
+        margin-bottom: 100px; } }
 
 .footer {
   min-height: 271px;
-  display: flex;
   color: #929496;
   font-size: 21px; }
   .footer main {
     justify-content: space-between;
     align-items: center;
     min-height: 271px; }
+    @media screen and (max-width: 768px) {
+      .footer main {
+        flex-direction: column;
+        justify-content: space-around; } }
   .footer ul {
     display: flex; }
     .footer ul li {
@@ -118,14 +124,23 @@ li {
   justify-content: flex-end;
   height: 892px;
   padding-bottom: 200px; }
+  @media screen and (max-width: 768px) {
+    .bg main {
+      padding-bottom: 100px; } }
 .bg_items {
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .bg_items {
+      flex-direction: column; } }
 .bg_text {
   display: flex;
   flex-direction: column;
   padding-top: 15px;
   flex-basis: 29%; }
+  @media screen and (max-width: 768px) {
+    .bg_text {
+      margin-bottom: 30px; } }
 .bg_first {
   border-top: 4px solid #6D3F96; }
 .bg_second {
@@ -171,7 +186,8 @@ li {
   background-color: #70CBCE; }
   .price main {
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-top: 100px; }
   .price_text {
     display: flex;
     flex-direction: column;
@@ -179,32 +195,46 @@ li {
     font-size: 21px;
     line-height: 25px;
     text-align: center;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    color: #fff; }
   .price_price {
     display: flex;
     justify-content: space-between; }
-  .price ul {
+    @media screen and (max-width: 768px) {
+      .price_price {
+        flex-direction: column;
+        flex-basis: 50%; } }
+  .price_ul {
     text-align: center;
     flex-basis: 29%;
     transform: scale(1);
     transition-duration: 0.3s; }
+    @media screen and (max-width: 768px) {
+      .price_ul {
+        flex-basis: 10%; } }
   .price li {
     background-color: #fff;
     height: 50px;
     font-size: 17px;
-    line-height: 50px; }
+    line-height: 50px;
+    font-weight: 800; }
   .price_li {
-    line-height: 25px !important; }
+    line-height: 25px !important;
+    font-weight: 300 !important; }
   .price_black {
     background-color: #231F20 !important;
     border-top-right-radius: 15px;
-    border-top-left-radius: 15px; }
+    border-top-left-radius: 15px;
+    color: #fff; }
   .price_grey {
-    background-color: #c4c4c4 !important;
+    background-color: #C4C4C4 !important;
     line-height: 50px !important;
-    font-size: 35px !important; }
+    font-size: 35px !important;
+    color: #fff; }
   .price_white {
-    background-color: #c4c4c4 !important; }
+    background-color: #c4c4c4 !important;
+    color: #70CBCE;
+    text-transform: uppercase; }
   .price ul:hover {
     transform: scale(1.5);
     z-index: 10000;

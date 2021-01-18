@@ -1,12 +1,16 @@
  .footer {
      min-height: 271px;
-     display: flex;
+    //  display: flex;
     color:#929496;
     font-size: 21px;
      main {
         justify-content:space-between ;
         align-items: center;
         min-height: 271px;
+        @include ipad {
+            flex-direction: column;
+            justify-content: space-around;
+        }
      }
     ul {
         display: flex;

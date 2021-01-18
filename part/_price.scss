@@ -3,6 +3,8 @@
     main {
         flex-direction: column;
         justify-content: space-between;
+        padding-top: 100px;
+        
 
     }
     &_text {
@@ -13,41 +15,55 @@
         line-height: 25px;
         text-align: center;
         margin-bottom: 60px;
+        color:#fff;
     }
     &_price {
         display: flex;
         justify-content: space-between;
+        @include ipad {
+            flex-direction: column;
+            flex-basis:50%;
+            
+        }
     }
-    ul {
+    &_ul {
         text-align: center;
         flex-basis: 29%;
         transform: scale(1);
         transition-duration:0.3s;
+        @include ipad {
+            flex-basis:10%
+        }
         
     }
     li {
       background-color: #fff;
       height: 50px;
       font-size: 17px;
-      line-height: 50px;    
+      line-height: 50px;
+      font-weight: 800;
     }
     &_li {
         line-height: 25px!important;
+        font-weight: 300!important;
     }
     &_black {
         background-color: #231F20!important;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
+        color:#fff;
     }
     &_grey {
-        background-color: rgb(196, 196, 196)!important;
+        background-color:#C4C4C4!important;
         line-height: 50px!important;
         font-size: 35px!important;
-       
+       color:#fff;
         
     }
     &_white {
         background-color: rgb(196, 196, 196)!important;
+        color:#70CBCE;
+        text-transform:uppercase;
     }
     ul:hover {
         transform: scale(1.5);

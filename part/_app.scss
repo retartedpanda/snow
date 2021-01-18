@@ -19,5 +19,8 @@
     }
     img {
         transform: translateY(500px);
+        @include ipad {
+            margin-bottom: 100px;
+        }
     }
 }

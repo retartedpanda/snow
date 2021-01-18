@@ -4,19 +4,28 @@
         justify-content: flex-end;
         height: 892px;
         padding-bottom: 200px;
+        @include ipad {
+            padding-bottom: 100px;
+        }
     }
     &_items {
         display: flex;
         justify-content: space-between;
+        @include ipad {
+            flex-direction: column;
+            
+        }
         
 
     }
     &_text {
         display: flex;
         flex-direction: column;
-        padding-top: 15px;
-        
+        padding-top: 15px;        
         flex-basis: 29%;
+        @include ipad {
+            margin-bottom: 30px;
+        }
         
     }
     &_first {
