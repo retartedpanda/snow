@@ -1,5 +1,6 @@
 .app {
     background-image:url(/app/img/app.jpg);
+    background-repeat: no-repeat;
     color:#eee;
     main {
         justify-content:space-between;
@@ -18,9 +19,12 @@
         font-size: 21px;
     }
     img {
-        transform: translateY(500px);
-        @include ipad {
-            margin-bottom: 100px;
+        transform: translateY(250px);
+    //     @include ipad {
+    //         margin-bottom: 100px;
+    //     }
+        @include tf {
+            display:none;
         }
-    }
+         }
 }

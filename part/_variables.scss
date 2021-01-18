@@ -12,3 +12,8 @@
          @content;
      }
  }    
+ @mixin tf {
+    @media screen and (max-width:520px){
+        @content;
+    }
+}

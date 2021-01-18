@@ -5,7 +5,11 @@
         height: 892px;
         padding-bottom: 200px;
         @include ipad {
-            padding-bottom: 100px;
+            padding-bottom: 50px;
+        }
+        @include tf {
+            padding-bottom:0;
+            justify-content: space-around;
         }
     }
     &_items {
@@ -13,8 +17,10 @@
         justify-content: space-between;
         @include ipad {
             flex-direction: column;
+            align-items: center;
             
         }
+        
         
 
     }
@@ -25,8 +31,14 @@
         flex-basis: 29%;
         @include ipad {
             margin-bottom: 30px;
+            
+            width: 60%;
         }
-        
+        @include tf {
+            margin-bottom: 30px;
+            
+            width: 90%;
+        }
     }
     &_first {
         border-top: 4px solid #6D3F96 ;

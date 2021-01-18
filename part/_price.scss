@@ -20,10 +20,11 @@
     &_price {
         display: flex;
         justify-content: space-between;
+
         @include ipad {
             flex-direction: column;
             flex-basis:50%;
-            
+            align-items: center;
         }
     }
     &_ul {
@@ -32,13 +33,18 @@
         transform: scale(1);
         transition-duration:0.3s;
         @include ipad {
-            flex-basis:10%
+            width: 60%;
+            margin-bottom: 30px;
+        }
+        @include tf {
+            width: 90%;
+            margin-bottom: 30px;
         }
         
     }
     li {
       background-color: #fff;
-      height: 50px;
+      padding: 15px;
       font-size: 17px;
       line-height: 50px;
       font-weight: 800;
@@ -66,7 +72,7 @@
         text-transform:uppercase;
     }
     ul:hover {
-        transform: scale(1.5);
+        transform: scale(1.15);
         z-index: 10000;
         transition:all .5s linear ;
     }
