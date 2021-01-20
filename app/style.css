@@ -70,7 +70,7 @@ li {
     display: flex;
     margin-top: 30px; }
     .header_but a:hover {
-      background-color: #aea;
+      background-color: #70CBCE;
       transition: all 0.5s linear; }
   .header a {
     display: block;
@@ -135,6 +135,15 @@ li {
     display: flex; }
     .footer ul li {
       margin-right: 20px; }
+    .footer ul a {
+      text-align: center;
+      display: block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border: 2px solid #929496;
+      color: #929496;
+      border-radius: 15%; }
 
 .bg main {
   flex-direction: column;
@@ -207,7 +216,12 @@ li {
       background-color: #70CBCE;
       text-align: center;
       text-transform: uppercase;
-      color: #fff; }
+      color: #fff;
+      transition-duration: 0.7s;
+      transition-delay: 0.3s; }
+    .sub_buts_2:hover {
+      background-color: #111;
+      transition: all .7s linear; }
 
 .price {
   background-color: #70CBCE; }

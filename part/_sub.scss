@@ -45,7 +45,13 @@
            background-color: #70CBCE;
            text-align: center;
            text-transform: uppercase;
-           color:#fff
+           color:#fff;
+           transition-duration: 0.7s;
+           transition-delay: 0.3s;
+       }
+       &_2:hover {
+           background-color: #111;
+           transition: all .7s linear;
        }
     }
 }
