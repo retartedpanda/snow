@@ -32,6 +32,8 @@
         flex-basis: 32%;
         transform: scale(1);
         transition-duration:0.3s;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
         @include ipad {
             width: 60%;
             margin-bottom: 30px;
@@ -44,7 +46,7 @@
     }
     li {
       background-color: #fff;
-      padding: 10px;
+      padding: 5px;
       font-size: 17px;
       line-height: 50px;
       font-weight: 800;
@@ -55,8 +57,7 @@
     }
     &_black {
         background-color: #231F20!important;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
+        
         color:#fff;
     }
     &_grey {
@@ -73,6 +74,8 @@
     }
     ul:hover {
         transform: scale(1.15);
+        box-shadow: 0 0 3px 3px black;
+        
         z-index: 10000;
         transition:all .5s linear ;
     }

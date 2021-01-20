@@ -69,6 +69,9 @@ li {
   .header_but {
     display: flex;
     margin-top: 30px; }
+    .header_but a:hover {
+      background-color: #aea;
+      transition: all 0.5s linear; }
   .header a {
     display: block;
     height: 55px;
@@ -233,7 +236,9 @@ li {
     text-align: center;
     flex-basis: 32%;
     transform: scale(1);
-    transition-duration: 0.3s; }
+    transition-duration: 0.3s;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0; }
     @media screen and (max-width: 768px) {
       .price_ul {
         width: 60%;
@@ -244,7 +249,7 @@ li {
         margin-bottom: 30px; } }
   .price li {
     background-color: #fff;
-    padding: 10px;
+    padding: 5px;
     font-size: 17px;
     line-height: 50px;
     font-weight: 800; }
@@ -253,8 +258,6 @@ li {
     font-weight: 300 !important; }
   .price_black {
     background-color: #231F20 !important;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
     color: #fff; }
   .price_grey {
     background-color: #C4C4C4 !important;
@@ -267,6 +270,7 @@ li {
     text-transform: uppercase; }
   .price ul:hover {
     transform: scale(1.15);
+    box-shadow: 0 0 3px 3px black;
     z-index: 10000;
     transition: all 0.5s linear; }
 
