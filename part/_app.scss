@@ -1,7 +1,11 @@
 .app {
     background-image:url(/app/img/app.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     color:#eee;
+    @include tf {
+        min-height: 250px;
+    }
     main {
         justify-content:space-between;
         flex-direction: column;
@@ -17,6 +21,9 @@
         text-align: center;
         padding-top: 100px;
         font-size: 21px;
+        @include tf {
+            padding-top: 30px;
+        }
     }
     img {
         transform: translateY(250px);
@@ -25,6 +32,6 @@
     //     }
         @include tf {
             display:none;
-        }
+            transform: translateY(0);       }
          }
 }

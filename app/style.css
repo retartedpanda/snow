@@ -87,8 +87,12 @@ li {
 
 .app {
   background-image: url(/app/img/app.jpg);
+  background-size: 100%;
   background-repeat: no-repeat;
   color: #eee; }
+  @media screen and (max-width: 520px) {
+    .app {
+      min-height: 250px; } }
   .app main {
     justify-content: space-between;
     flex-direction: column;
@@ -102,11 +106,15 @@ li {
     text-align: center;
     padding-top: 100px;
     font-size: 21px; }
+    @media screen and (max-width: 520px) {
+      .app_text {
+        padding-top: 30px; } }
   .app img {
     transform: translateY(250px); }
     @media screen and (max-width: 520px) {
       .app img {
-        display: none; } }
+        display: none;
+        transform: translateY(0); } }
 
 .footer {
   min-height: 271px;
@@ -223,7 +231,7 @@ li {
         align-items: center; } }
   .price_ul {
     text-align: center;
-    flex-basis: 29%;
+    flex-basis: 32%;
     transform: scale(1);
     transition-duration: 0.3s; }
     @media screen and (max-width: 768px) {
@@ -236,7 +244,7 @@ li {
         margin-bottom: 30px; } }
   .price li {
     background-color: #fff;
-    padding: 15px;
+    padding: 10px;
     font-size: 17px;
     line-height: 50px;
     font-weight: 800; }

@@ -29,7 +29,7 @@
     }
     &_ul {
         text-align: center;
-        flex-basis: 29%;
+        flex-basis: 32%;
         transform: scale(1);
         transition-duration:0.3s;
         @include ipad {
@@ -44,7 +44,7 @@
     }
     li {
       background-color: #fff;
-      padding: 15px;
+      padding: 10px;
       font-size: 17px;
       line-height: 50px;
       font-weight: 800;
